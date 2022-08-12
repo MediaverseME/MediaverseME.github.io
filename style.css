@@ -366,7 +366,7 @@ body, html {
   #invoice-button {
     position:fixed;
     top:450px;
-    left:75px;
+    left:50px;
     width:250px;
     z-index: 2;
   }
