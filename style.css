@@ -1,0 +1,463 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+} 
+
+/* Backgrund & logo */
+
+#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.logo {
+  position: fixed;
+  bottom: 0;
+  right: 0px;
+  z-index: 1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* form size */
+
+.client-form {
+  position:absolute;
+  width: 1280; 
+  height: 1350;
+  }
+
+.quotation-form {
+  position:absolute;
+  width: 1280; 
+  height: 1350;
+  }
+
+.invoice-form {
+  position:absolute;
+  width: 1280; 
+  height: 1550;
+  }
+
+/* home buttons position*/
+
+#client-button {
+  position:absolute;
+  top:450px;
+  right:380px;
+  z-index: 2;
+}
+
+#quotation-button {
+  position:absolute;
+  top:550px;
+  right:50%;
+  z-index: 2;
+}
+
+#invoice-button {
+  position:absolute;
+  top:550px;
+  left:50%;
+  z-index: 2;
+}
+
+/* home button design */
+
+  #client-button {
+  display: inline-block;
+  padding: 24px 32px;
+  border: 0;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(50px);
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 24px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 25.5px;
+  width: 600px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  z-index: 1;
+}
+
+  #client-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  #client-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  #client-button:hover span {
+    padding-right: 25px;
+  }
+
+  #client-button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+#quotation-button {
+  display: inline-block;
+  padding: 24px 32px;
+  border: 0;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(50px);
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 24px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 25.5px;
+  width: 600px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  z-index: 1;
+}
+
+  #quotation-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  #quotation-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  #quotation-button:hover span {
+    padding-right: 25px;
+  }
+
+  #quotation-button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  #invoice-button {
+    display: inline-block;
+    padding: 24px 32px;
+    border: 0;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 24px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 25.5px;
+    width: 600px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    z-index: 1;
+  }
+  
+    #invoice-button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+  
+    #invoice-button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+  
+    #invoice-button:hover span {
+      padding-right: 25px;
+    }
+  
+    #invoice-button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+
+/* download buttons position */
+
+#qoutation-pdf {
+  position:relative;
+  top:1570px;  
+  left: 310px;   
+}
+
+#invoice-pdf {
+    position:relative;
+    top:1720px;  
+    left: 310px;   
+}
+
+#database {
+  position:relative;
+  top:1120px;  
+  left:310px; 
+}
+
+/* download buttons design */
+
+#database {
+  display: inline-block;
+  padding: 24px 32px;
+  border: 0;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(50px);
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 24px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 25.5px;
+  width: 650px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  z-index: 1;
+}
+
+#database span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#database span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#database:hover span {
+  padding-right: 25px;
+}
+
+#database:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#qoutation-pdf {
+  display: inline-block;
+  padding: 24px 32px;
+  border: 0;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(50px);
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 24px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 25.5px;
+  width: 650px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  z-index: 1;
+}
+
+  #qoutation-pdf span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  #qoutation-pdf span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  #qoutation-pdf:hover span {
+    padding-right: 25px;
+  }
+
+  #qoutation-pdf:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  #invoice-pdf {
+    display: inline-block;
+    padding: 24px 32px;
+    border: 0;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 24px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 25.5px;
+    width: 650px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    z-index: 1;
+  }
+ 
+  #invoice-pdf span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  #invoice-pdf span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  #invoice-pdf:hover span {
+    padding-right: 25px;
+  }
+
+  #invoice-pdf:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  
+
+  @media only screen and (max-width: 800px)
+
+  /* For mobile phones: */
+{
+  #background-video {
+    position: fixed;
+    height: 800px;
+    width:auto;
+  }
+
+  .logo {
+    position: absolute;
+    top: 0px;
+    left: 60px;
+    z-index: 1;
+    width: 250px;
+    padding: 20px;
+  }
+
+/* home buttons position*/
+
+  #client-button {
+    position:fixed;
+    top:250px;
+    right:80px;
+    width:250px;
+    z-index: 2;
+  }
+  
+  #quotation-button {
+    position:fixed;
+    top:350px;
+    right:80px;
+    width:250px;
+    z-index: 2;
+  }
+
+  #invoice-button {
+    position:fixed;
+    top:450px;
+    left:50px;
+    width:250px;
+    z-index: 2;
+  }
+
+/* form size */
+
+  .client-form {
+    position:absolute;
+    width: 400px; 
+    height: 1430px;
+    }
+
+  .quotation-form {
+    position:absolute;
+    width: 400px; 
+    height: 1850px;  
+  }
+      
+  .invoice-form {
+    position:absolute;
+    width: 400px; 
+    height: 1850px;  
+  }
+
+/* download button position */
+
+  #invoice-pdf {
+  position:relative;
+  width: 360px;
+  top:1760px;  
+  left:15px;
+  }
+
+  #qoutation-pdf {
+    position:relative;
+    width: 360px;
+    top:1760px;  
+    left:15px;
+  }
+}
