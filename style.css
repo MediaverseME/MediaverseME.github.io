@@ -15,56 +15,37 @@ body, html {
 }
 
 .logo {
-  position: fixed;
-  bottom: 0;
-  right: 0px;
+  position: relative;
+  bottom: 50px;
+  left: 20%;
   z-index: 1;
-  width: 100%;
+  width: 1000px;
   padding: 20px;
 }
 
 /* form size */
 
 .client-form {
-  position:absolute;
-  width: 1280; 
-  height: 1350;
+  position:relative;
+  left: 580px;
+  width: 600px; 
+  height: 1230px;
   }
 
 .quotation-form {
-  position:absolute;
-  width: 1280; 
-  height: 1350;
+  position:relative;
+  left: 580px;
+  width: 600px; 
+  height: 1800px;
   }
 
 .invoice-form {
-  position:absolute;
-  width: 1280; 
-  height: 1550;
+  position:relative;
+  left: 500px;
+  width: 800px; 
+  height: 1800px;
   }
 
-/* home buttons position*/
-
-#client-button {
-  position:absolute;
-  top:450px;
-  right:380px;
-  z-index: 2;
-}
-
-#quotation-button {
-  position:absolute;
-  top:550px;
-  right:50%;
-  z-index: 2;
-}
-
-#invoice-button {
-  position:absolute;
-  top:550px;
-  left:50%;
-  z-index: 2;
-}
 
 /* home button design */
 
@@ -215,21 +196,18 @@ body, html {
 /* download buttons position */
 
 #qoutation-pdf {
-  position:relative;
-  top:1570px;  
-  left: 310px;   
+  position:relative; 
+  left: 560px;   
 }
 
 #invoice-pdf {
-    position:relative;
-    top:1720px;  
-    left: 310px;   
+  position:relative; 
+  left: 560px;    
 }
 
 #database {
-  position:relative;
-  top:1120px;  
-  left:310px; 
+  position:relative; 
+  left: 560px;   
 }
 
 /* download buttons design */
@@ -391,9 +369,9 @@ body, html {
   }
 
   .logo {
-    position: absolute;
+    position: relative;
     top: 0px;
-    left: 60px;
+    left: 0%;
     z-index: 1;
     width: 250px;
     padding: 20px;
@@ -420,7 +398,7 @@ body, html {
   #invoice-button {
     position:fixed;
     top:450px;
-    left:50px;
+    right:80px;
     width:250px;
     z-index: 2;
   }
@@ -428,36 +406,46 @@ body, html {
 /* form size */
 
   .client-form {
-    position:absolute;
+    position:relative;
     width: 400px; 
-    height: 1430px;
+    left: 20px;
+    height: 1250px;
     }
 
   .quotation-form {
-    position:absolute;
-    width: 400px; 
+    position:relative;
+    width: 360px; 
+    left: 5px;
     height: 1850px;  
   }
       
   .invoice-form {
-    position:absolute;
+    position:relative;
     width: 400px; 
+    left: 5px;
     height: 1850px;  
   }
 
 /* download button position */
 
+  #database {
+  position:relative;
+  width: 360px;
+  top:1px;
+  left: 30px;  
+}
+
   #invoice-pdf {
   position:relative;
   width: 360px;
-  top:1760px;  
-  left:15px;
+  top:1px;
+  left: 1px;  
   }
 
   #qoutation-pdf {
     position:relative;
     width: 360px;
-    top:1760px;  
-    left:15px;
+    top:1px;
+    left: 1px;  
   }
 }
